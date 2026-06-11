@@ -1,325 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Hu Chenyu — Electrical & Electronic Engineering student at NTU Singapore. Explore my skills, projects, internship experience, and education.">
-  <title>Hu Chenyu — EEE Student Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="Academic profile of Chenyu Hu, Electrical and Electronic Engineering undergraduate at Nanyang Technological University."
+    />
+    <title>Chenyu Hu | Academic Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page" id="top">
+      <nav class="floating-nav" aria-label="Section navigation">
+        <ul class="nav-anchors">
+          <li><a class="nav-icon" href="#top" aria-label="Back to top">Top</a></li>
+        </ul>
+        <ul class="nav-group">
+          <li><a href="#work-experience">Work</a></li>
+          <li><a href="#education">Edu.</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav-anchors bottom">
+          <li><a class="nav-icon" href="#bottom" aria-label="Jump to bottom">End</a></li>
+        </ul>
+      </nav>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- ========== Navigation ========== -->
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="container">
-      <a href="#hero" class="nav-logo">Hu Chenyu</a>
-
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-menu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#internship" class="nav-link">Internship</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ========== Hero Section ========== -->
-  <section id="hero" class="hero section">
-    <div class="container">
-      <div class="hero-image-wrapper">
-        <img src="assets/profile.jpg" alt="Profile photo of Hu Chenyu" class="hero-image" onerror="this.style.background='var(--color-bg-secondary)';this.style.minHeight='180px';this.style.minWidth='180px';this.style.borderRadius='50%';this.alt='Profile photo placeholder';">
-      </div>
-
-      <div class="hero-content reveal">
-        <h1 class="hero-greeting">Hi, I'm <span class="accent">Chenyu Hu</span></h1>
-        <p class="hero-subtitle">EEE Student at Nanyang Technological University, Singapore</p>
-        <p class="hero-tagline">Passionate about IC design, signal processing, and large language models & machine learning.</p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Projects</a>
-          <a href="assets/resume huchenyu (1).pdf" class="btn btn-outline" download>Download CV</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== About Section ========== -->
-  <section id="about" class="section">
-    <div class="container reveal">
-      <h2 class="section-heading">About Me</h2>
-
-      <div class="about-text">
-        <p>
-          I'm a second-year undergraduate student studying Electrical & Electronic Engineering at Nanyang Technological University (NTU), Singapore. Currently holding a GPA of 4.25/5.0, I've been offered a place in the Accelerated Bachelor Programme in view of good academic performance.
-        </p>
-        <p>
-          My academic interests span IC design & VLSI, signal processing, and large language models & machine learning. I enjoy bridging the gap between hardware and intelligent systems — understanding how circuits work at the transistor level while exploring how large-scale AI models process and generate language, vision, and reasoning.
-        </p>
-        <p>
-          Beyond academics, I'm a Black Belt (1st Dan) martial artist and a competitive Counter-Strike 2 player (Faceit Level 8). Both pursuits have sharpened my discipline, analytical thinking, and ability to perform under pressure — skills that translate directly into engineering problem-solving.
-        </p>
-      </div>
-
-      <div class="quick-facts">
-        <div class="fact-item">
-          <svg class="fact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Singapore</span>
-        </div>
-        <div class="fact-item">
-          <svg class="fact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          <span>2nd Year, NTU</span>
-        </div>
-        <div class="fact-item">
-          <svg class="fact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          <span>English, Mandarin</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Skills Section ========== -->
-  <section id="skills" class="section">
-    <div class="container reveal">
-      <h2 class="section-heading">Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3 class="skill-group-title">Programming & Technical</h3>
-          <div class="skill-item">
-            <span class="skill-name">Python</span>
-            <div class="skill-bar" data-target-width="85"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">C Programming</span>
-            <div class="skill-bar" data-target-width="80"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Data Structures</span>
-            <div class="skill-bar" data-target-width="70"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Intermediate</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">LLMs & Machine Learning</span>
-            <div class="skill-bar" data-target-width="65"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Intermediate</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Signal Processing</span>
-            <div class="skill-bar" data-target-width="55"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Familiar</span>
-          </div>
+      <header>
+        <h1>Chenyu Hu</h1>
+        <div class="contact">
+          <span><a href="mailto:cheneyhu33@gmail.com">Email</a></span>
+          <span><a href="assets/resume huchenyu (1).pdf">CV</a></span>
+          <span><a href="https://github.com/cheneyhu33" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+          <span><a href="https://www.linkedin.com/in/chenyu-hu-6a7615383" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
         </div>
 
-        <div class="skill-group">
-          <h3 class="skill-group-title">Software & Tools</h3>
-          <div class="skill-item">
-            <span class="skill-name">AI Coding Assistants</span>
-            <div class="skill-bar" data-target-width="85"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Jupyter Notebook</span>
-            <div class="skill-bar" data-target-width="75"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Adobe Illustrator</span>
-            <div class="skill-bar" data-target-width="70"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Adobe Photoshop</span>
-            <div class="skill-bar" data-target-width="70"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Git / GitHub</span>
-            <div class="skill-bar" data-target-width="55"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Intermediate</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Languages & Soft Skills</h3>
-          <div class="skill-item">
-            <span class="skill-name">English</span>
-            <div class="skill-bar" data-target-width="85"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Mandarin</span>
-            <div class="skill-bar" data-target-width="85"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Proficient</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Collaboration</span>
-            <div class="skill-bar" data-target-width="85"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Strong</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Analytical Thinking</span>
-            <div class="skill-bar" data-target-width="80"><div class="skill-bar-fill"></div></div>
-            <span class="skill-level">Strong</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Projects Section ========== -->
-  <section id="projects" class="section">
-    <div class="container reveal">
-      <h2 class="section-heading">Projects</h2>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-content">
-            <h3 class="project-title">Emotional Companion AI Memory Benchmark</h3>
-            <p class="project-tag">AI / Machine Learning</p>
-            <p class="project-description">
-              Designed an evaluation benchmark for long-term memory in emotional companion AI systems. Defined capability dimensions, evaluation tasks, and metrics covering memory updating, forgetting, temporal recall, and persistent user-state tracking.
+        <div class="bio">
+          <div class="intro">
+            <p>
+              I am a second-year undergraduate student studying Electrical and Electronic Engineering at Nanyang Technological University, Singapore. My academic interests include IC design, VLSI, signal processing, embedded systems, and large language models.
             </p>
-            <div class="project-tech-tags">
-              <span class="tech-tag">AI Evaluation</span>
-              <span class="tech-tag">Benchmark Design</span>
-              <span class="tech-tag">Memory Systems</span>
-              <span class="tech-tag">Python</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-content">
-            <h3 class="project-title">Automatic Volume Control for Audio Amplifier System</h3>
-            <p class="project-tag">Embedded Systems / Signal Processing</p>
-            <p class="project-description">
-              Built a closed-loop automatic volume control system for an audio amplifier using an STM32 microcontroller (ARM Cortex M4) with MicroPython. Implemented VCA, power amplifier, and VU Meter subsystems on breadboard. Developed Python control algorithms for ADC/DAC data acquisition, FFT spectral analysis, waveform generation, and real-time feedback to maintain constant audio output level.
+            <p>
+              I enjoy problems that connect rigorous engineering fundamentals with practical intelligent systems, including sensing, feedback control, model evaluation, memory systems, and reliable AI behavior. I am currently open to research, internship, and engineering opportunities.
             </p>
-            <div class="project-tech-tags">
-              <span class="tech-tag">STM32</span>
-              <span class="tech-tag">MicroPython</span>
-              <span class="tech-tag">ADC / DAC</span>
-              <span class="tech-tag">FFT</span>
-              <span class="tech-tag">Closed-Loop Control</span>
-              <span class="tech-tag">Op-Amp Circuits</span>
+            <ul>
+              <li><em>IC Design and VLSI</em></li>
+              <li><em>Signal Processing and Embedded Systems</em></li>
+              <li><em>LLM Evaluation and AI Memory</em></li>
+            </ul>
+          </div>
+          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Chenyu Hu" />
+        </div>
+      </header>
+
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="period">2026/05 - Present</div>
+            <div class="detail">
+              <strong>Applied AI Engineer Intern, Robopoet, Shanghai, China.</strong>
+              <span>AI memory benchmark design, multilingual model evaluation, prompt localization.</span>
+              <ul>
+                <li>Contributed to an emotional companion AI memory benchmark, including capability dimensions, evaluation tasks, sample data, and metrics.</li>
+                <li>Evaluated overseas AI companion model behavior across multilingual interaction scenarios and identified memory-system issues.</li>
+                <li>Supported Japanese prompt localization and schema configuration improvements for more consistent model behavior.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="period">2025/05 - 2025/07</div>
+            <div class="detail">
+              <strong>Data Annotation Intern, Hangzhou NetEase Zhiqi Technology Co., Ltd., Hangzhou, China.</strong>
+              <span>AI model training, intent classification, customer service dialogue annotation.</span>
+              <ul>
+                <li>Annotated customer service dialogue data from e-commerce logistics platforms to support AI customer service model training.</li>
+                <li>Processed approximately 200-500 dialogue sessions per day while classifying user intents, service scenarios, and response patterns.</li>
+                <li>Maintained consistency with project-specific labeling guidelines and quality requirements.</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ========== Internship Section ========== -->
-  <section id="internship" class="section internship-section">
-    <div class="container reveal">
-      <h2 class="section-heading">Internship Experience</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <p class="timeline-date">May 2026 — Present</p>
-          <h3 class="timeline-title">Applied AI Engineer Intern</h3>
-          <p class="timeline-company">Robopoet — Singapore</p>
-          <p class="timeline-description">
-            Contributed to the design of an emotional companion AI memory benchmark, supporting the definition of evaluation tasks, capability dimensions, data samples, and metrics for long-term memory, memory updating, forgetting, temporal recall, and persistent user-state tracking. Also evaluated and optimised the overseas AI companion model across multilingual interaction scenarios, supporting memory-system issue detection, Japanese prompt localisation, and schema configuration improvements.
-          </p>
-          <div class="timeline-highlights">
-            <span class="highlight-tag">AI Benchmark Design</span>
-            <span class="highlight-tag">Memory Evaluation</span>
-            <span class="highlight-tag">Multilingual NLP</span>
-            <span class="highlight-tag">Prompt Localisation</span>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="period">2024/08 - 2028/05</div>
+            <div class="detail">
+              <strong>Nanyang Technological University, Singapore.</strong>
+              <span>B.Eng. in Electrical and Electronic Engineering. GPA: 4.25 / 5.0. Offered a place in the Accelerated Bachelor Programme.</span>
+              <span>Relevant coursework: Data Structures and Algorithms, AI and Data Mining, Computer Communications, Engineering Mathematics.</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <p class="timeline-date">May 2025 — Jul 2025</p>
-          <h3 class="timeline-title">Data Annotation Intern, AI Model Training</h3>
-          <p class="timeline-company">Hangzhou NetEase Zhiqi Technology Co., Ltd — Hangzhou, China</p>
-          <p class="timeline-description">
-            Annotated customer service dialogue data from e-commerce logistics platforms to support the training of AI-powered customer service models. Processed approximately 200–500 dialogue sessions per day, classifying user intents, service scenarios, and response patterns based on project-specific labelling guidelines.
-          </p>
-          <div class="timeline-highlights">
-            <span class="highlight-tag">Data Annotation</span>
-            <span class="highlight-tag">Intent Classification</span>
-            <span class="highlight-tag">AI Model Training</span>
-            <span class="highlight-tag">E-commerce NLP</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Education Section ========== -->
-  <section id="education" class="section">
-    <div class="container reveal">
-      <h2 class="section-heading">Education</h2>
-
-      <div class="education-timeline">
-        <div class="education-item">
-          <div class="education-dot"></div>
-          <p class="education-date">Aug 2024 — May 2028</p>
-          <h3 class="education-degree">BEng Electrical & Electronic Engineering</h3>
-          <p class="education-school">Nanyang Technological University — Singapore</p>
-          <div class="education-details">
-            <p>GPA: 4.25 / 5.0 | Offered place in Accelerated Bachelor Programme</p>
-            <div class="course-list">
-              <span class="course-tag">Data Structure & Algorithm</span>
-              <span class="course-tag">AI & Data Mining</span>
-              <span class="course-tag">Computer Communications</span>
-              <span class="course-tag">Engineering Mathematics</span>
+          <div class="timeline-item">
+            <div class="period">2020/09 - 2023/05</div>
+            <div class="detail">
+              <strong>Keqiao High School of Zhejiang, Zhejiang, China.</strong>
+              <span>High School Diploma. Gaokao National College Entrance Examination: top 5% in Zhejiang Province.</span>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="education-item">
-          <div class="education-dot"></div>
-          <p class="education-date">Sep 2020 — May 2023</p>
-          <h3 class="education-degree">High School Diploma</h3>
-          <p class="education-school">Keqiao High School of Zhejiang — Zhejiang, China</p>
-          <div class="education-details">
-            <p>Gaokao (National College Entrance Examination) — Top 5% in Zhejiang Province</p>
-          </div>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <div class="publication-item">
+              <span class="period">AI</span>
+              <div class="detail">
+                <strong>Emotional Companion AI Memory Benchmark</strong>
+                Designed an evaluation framework for long-term memory in emotional companion AI systems, covering memory updating, forgetting, temporal recall, and persistent user-state tracking.
+                <span>Keywords: AI evaluation, benchmark design, memory systems, Python.</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">EE</span>
+              <div class="detail">
+                <strong>Automatic Volume Control for Audio Amplifier</strong>
+                Built a closed-loop audio control system with STM32 and MicroPython, integrating ADC/DAC acquisition, FFT analysis, waveform generation, and real-time feedback control.
+                <span>Keywords: STM32, MicroPython, FFT, control systems, op-amp circuits.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Programming</strong> Python, C, MicroPython, data structures.</li>
+          <li><strong>AI and Data</strong> LLM evaluation, data annotation, intent classification, benchmark design.</li>
+          <li><strong>Engineering</strong> STM32, ADC/DAC, FFT analysis, signal processing, op-amp circuits.</li>
+          <li><strong>Tools and Communication</strong> Jupyter Notebook, Git/GitHub, Adobe Illustrator, Adobe Photoshop, English, Mandarin.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="intro">
+          <p>
+            I am interested in research, internship, and engineering opportunities related to embedded systems, signal processing, IC design, AI evaluation, and intelligent systems.
+          </p>
+          <p>
+            Email: <a href="mailto:cheneyhu33@gmail.com">cheneyhu33@gmail.com</a><br />
+            GitHub: <a href="https://github.com/cheneyhu33" target="_blank" rel="noopener noreferrer">github.com/cheneyhu33</a><br />
+            LinkedIn: <a href="https://www.linkedin.com/in/chenyu-hu-6a7615383" target="_blank" rel="noopener noreferrer">chenyu-hu-6a7615383</a>
+          </p>
         </div>
-      </div>
+      </section>
+
+      <footer>© 2026 Chenyu Hu. Created with Codex.</footer>
+      <div id="bottom"></div>
     </div>
-  </section>
-
-  <!-- ========== Footer ========== -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-copyright">&copy; 2026 Hu Chenyu. All rights reserved.</p>
-
-      <div class="footer-links">
-        <a href="https://github.com/cheneyhu33" class="footer-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-3.807 5.624-5.479 5.919.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/chenyu-hu-6a7615383" class="footer-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 22.267.792 23 1.771 23h20.451C23.2 23 24 22.267 24 21.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="mailto:cheneyhu33@gmail.com" class="footer-link" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-      </div>
-
-      <a href="#hero" class="back-to-top">↑ Back to top</a>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
